@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Search</title>
+</head>
+<body>
+    <p><a href="index.html">Back to search</a></p>
+
+    <form action="https://www.google.com/search" method="get">
+        <label for="all-words">All these words:</label>
+        <input id="all-words" type="text" name="as_q">
+
+        <label for="exact-phrase">Exact phrase:</label>
+        <input id="exact-phrase" type="text" name="as_epq">
+
+        <label for="any-words">Any of these words:</label>
+        <input id="any-words" type="text" name="as_oq">
+
+        <label for="exclude-words">None of these words:</label>
+        <input id="exclude-words" type="text" name="as_eq">
+
+        <label for="site">Search only this site:</label>
+        <input id="site" type="text" name="as_sitesearch"
+               placeholder="example.com">
+
+        <button type="submit">Advanced Search</button>
+    </form>
+</body>
+</html>
