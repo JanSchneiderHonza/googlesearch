@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Advanced Search</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <p><a href="index.html">Back to search</a></p>
 
     <form action="https://www.google.com/search" method="get">
-        <label for="all-words">All these words:</label>
-        <input id="all-words" type="text" name="as_q">
+        <div class="field">
+            <label for="all-words">All these words:</label>
+            <input id="all-words" type="text" name="as_q">
+        </div>
 
-        <label for="exact-phrase">Exact phrase:</label>
-        <input id="exact-phrase" type="text" name="as_epq">
+        <div class="field">
+            <label for="exact-phrase">Exact phrase:</label>
+            <input id="exact-phrase" type="text" name="as_epq">
+        </div>
 
-        <label for="any-words">Any of these words:</label>
-        <input id="any-words" type="text" name="as_oq">
+        <div class="field">
+            <label for="any-words">Any of these words:</label>
+            <input id="any-words" type="text" name="as_oq">
+        </div>
 
-        <label for="exclude-words">None of these words:</label>
-        <input id="exclude-words" type="text" name="as_eq">
+        <div class="field">
+            <label for="exclude-words">None of these words:</label>
+            <input id="exclude-words" type="text" name="as_eq">
+        </div>
 
-        <label for="site">Search only this site:</label>
-        <input id="site" type="text" name="as_sitesearch"
-               placeholder="example.com">
+        <div class="field">
+            <label for="site">Search only this site:</label>
+            <input id="site" type="text" name="as_sitesearch"
+                   placeholder="example.com">
+        </div>
 
         <button type="submit">Advanced Search</button>
     </form>
