@@ -6,13 +6,23 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <p><a href="index.html">Back to search</a></p>
+    <main class="page-shell">
+        <p class="back-link"><a href="index.html">Back to search</a></p>
+        <header class="page-header">
+            <p class="eyebrow">A different way to explore</p>
+            <h1>Image Search</h1>
+            <p>Find images across the web.</p>
+        </header>
 
-    <form action="https://www.google.com/search" method="get">
-        <label for="q">Search for images:</label>
-        <input id="q" type="text" name="q" required>
-        <input type="hidden" name="tbm" value="isch">
-        <button type="submit">Google Image Search</button>
-    </form>
+        <form action="https://www.google.com/search" method="get">
+            <label for="q">Search for images</label>
+            <input id="q" type="text" name="q" placeholder="Describe an image" required>
+            <input type="hidden" name="tbm" value="isch">
+            <div class="button-row">
+                <button type="submit">Google Image Search</button>
+                <button class="button-secondary" type="submit" name="btnI" value="I">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

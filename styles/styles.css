@@ -1,8 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    background: #f6f8fc;
+    color: #202124;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.page-shell {
+    width: min(100%, 36rem);
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #e4e8f0;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgb(32 33 36 / 8%);
+}
+
+.home-page {
+    margin-top: 12vh;
+    text-align: center;
+}
+
+.page-header {
+    margin-bottom: 1.75rem;
+}
+
+.page-header h1 {
+    margin: 0.2rem 0;
+    color: #174ea6;
+    font-size: clamp(2rem, 7vw, 3rem);
+    letter-spacing: -0.06em;
+}
+
+.page-header p {
+    margin: 0.4rem 0 0;
+    color: #5f6368;
+}
+
+.page-header .eyebrow {
+    color: #188038;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
 form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 24rem;
+    max-width: 30rem;
+    margin: 0 auto;
 }
 
 .field {
@@ -12,21 +65,84 @@ form {
 }
 
 input[type="text"] {
-    padding: 0.4rem;
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    color: #202124;
+    font: inherit;
 }
 
-button,
-input[type="submit"] {
-    align-self: flex-start;
-    padding: 0.45rem 0.8rem;
-    border: 1px solid #0b57d0;
-    border-radius: 4px;
-    background-color: #0b57d0;
+input[type="text"]:focus {
+    border-color: #1a73e8;
+    outline: 2px solid rgb(26 115 232 / 18%);
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+button {
+    padding: 0.65rem 1rem;
+    border: 1px solid #1a73e8;
+    border-radius: 8px;
+    background: #1a73e8;
     color: #fff;
+    font: inherit;
+    font-weight: 600;
     cursor: pointer;
 }
 
-button:hover,
-input[type="submit"]:hover {
-    background-color: #0842a0;
+button:hover {
+    background: #1558b0;
+}
+
+.button-secondary {
+    border-color: #dadce0;
+    background: #fff;
+    color: #3c4043;
+}
+
+.button-secondary:hover {
+    border-color: #c5c9d0;
+    background: #f8f9fa;
+}
+
+.page-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    margin: 0 0 1.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+@media (max-width: 480px) {
+    .page-shell {
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem;
+    }
 }

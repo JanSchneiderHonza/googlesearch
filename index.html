@@ -6,12 +6,26 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-    
-    <p><a href="advsearch.html">Advanced Search</a></p>
-    <p><a href="imgsearch.html">Image Search</a></p>
+        <main class="page-shell home-page">
+            <header class="page-header">
+                <p class="eyebrow">A simple place to start</p>
+                <h1>Search</h1>
+                <p>Explore the web with a query of your choice.</p>
+            </header>
+
+            <form action="https://www.google.com/search" method="get">
+                <label class="visually-hidden" for="q">Search the web</label>
+                <input id="q" type="text" name="q" placeholder="Search the web" required>
+                <div class="button-row">
+                    <button type="submit">Google Search</button>
+                    <button class="button-secondary" type="submit" name="btnI" value="I">I'm Feeling Lucky</button>
+                </div>
+            </form>
+
+            <nav class="page-links" aria-label="More search options">
+                <a href="advsearch.html">Advanced Search</a>
+                <a href="imgsearch.html">Image Search</a>
+            </nav>
+        </main>
     </body>
 </html>

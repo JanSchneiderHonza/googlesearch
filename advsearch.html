@@ -6,36 +6,46 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <p><a href="index.html">Back to search</a></p>
+    <main class="page-shell">
+        <p class="back-link"><a href="index.html">Back to search</a></p>
+        <header class="page-header">
+            <p class="eyebrow">Make your query more precise</p>
+            <h1>Advanced Search</h1>
+            <p>Combine terms to narrow down your results.</p>
+        </header>
 
-    <form action="https://www.google.com/search" method="get">
-        <div class="field">
-            <label for="all-words">All these words:</label>
-            <input id="all-words" type="text" name="as_q">
-        </div>
+        <form action="https://www.google.com/search" method="get">
+            <div class="field">
+                <label for="all-words">All these words:</label>
+                <input id="all-words" type="text" name="as_q">
+            </div>
 
-        <div class="field">
-            <label for="exact-phrase">Exact phrase:</label>
-            <input id="exact-phrase" type="text" name="as_epq">
-        </div>
+            <div class="field">
+                <label for="exact-phrase">Exact phrase:</label>
+                <input id="exact-phrase" type="text" name="as_epq">
+            </div>
 
-        <div class="field">
-            <label for="any-words">Any of these words:</label>
-            <input id="any-words" type="text" name="as_oq">
-        </div>
+            <div class="field">
+                <label for="any-words">Any of these words:</label>
+                <input id="any-words" type="text" name="as_oq">
+            </div>
 
-        <div class="field">
-            <label for="exclude-words">None of these words:</label>
-            <input id="exclude-words" type="text" name="as_eq">
-        </div>
+            <div class="field">
+                <label for="exclude-words">None of these words:</label>
+                <input id="exclude-words" type="text" name="as_eq">
+            </div>
 
-        <div class="field">
-            <label for="site">Search only this site:</label>
-            <input id="site" type="text" name="as_sitesearch"
-                   placeholder="example.com">
-        </div>
+            <div class="field">
+                <label for="site">Search only this site:</label>
+                <input id="site" type="text" name="as_sitesearch"
+                       placeholder="example.com">
+            </div>
 
-        <button type="submit">Advanced Search</button>
-    </form>
+            <div class="button-row">
+                <button type="submit">Advanced Search</button>
+                <button class="button-secondary" type="submit" name="btnI" value="I">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
