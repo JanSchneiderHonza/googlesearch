@@ -130,6 +130,14 @@ a:hover {
     margin: 0 0 1.5rem;
 }
 
+.page-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 2rem auto 0;
+    font-size: 0.875rem;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
