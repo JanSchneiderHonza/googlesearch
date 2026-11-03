@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Základní metadata stránky a odkaz na společné styly. -->
         <meta charset="UTF-8">
         <title>Search</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <a href="https://janschneiderhonza.github.io/#about">Portfolio</a>
+
     </head>
     <body>
+        <!-- Hlavní obsah úvodní stránky: nadpis, vyhledávací formulář a odkazy. -->
         <main class="page-shell home-page">
             <header class="page-header">
                 <p class="eyebrow">A simple place to start</p>
@@ -13,6 +17,8 @@
                 <p>Explore the web with a query of your choice.</p>
             </header>
 
+            <!-- GET předá zadaný dotaz Googlu jako parametr q. Tlačítko „I'm Feeling Lucky“
+                 navíc odešle parametr btnI, který požádá Google o přímý přechod na výsledek. -->
             <form action="https://www.google.com/search" method="get">
                 <label class="visually-hidden" for="q">Search the web</label>
                 <input id="q" type="text" name="q" placeholder="Search the web" required> <!-- pomoc této sekce jsem použil Copilot-->
@@ -22,15 +28,20 @@
                 </div>
             </form>
 
+            <!-- Odkazy na samostatné stránky pro pokročilé a obrázkové vyhledávání. -->
             <nav class="page-links" aria-label="More search options">
                 <a href="advsearch.html">Advanced Search</a>
                 <a href="imgsearch.html">Image Search</a>
             </nav>
         </main>
+
+        <!-- Patička obsahuje odkazy na validátory a ukázkové formulářové prvky. -->
         <footer class="page-footer">
+            <!-- Obrázky fungují jako odkazy na externí validátory HTML a CSS. -->
             <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjanschneiderhonza.github.io%2Fgooglesearch%2F"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="HTML Validator"></a>
             <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjanschneiderhonza.github.io%2Fgooglesearch%2F&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=en"><img src="https://www.w3.org/Icons/valid-html401" alt="Valid CSS"></a>
-             <div class="field">
+            <!-- Ukázkové textové pole a zaškrtávací políčko-->
+             <div class="field">s
                 <label for="ukázka">Ukázkový input:</label>
                 <input id="ukázka" type="text" placeholder="Zadejte text"> <!-- To je asi tak vše co tak nějak umím z formulářů -->
                 <label><input type="checkbox"> Ukázkový checkbox</label>
